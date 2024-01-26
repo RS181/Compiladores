@@ -1,0 +1,21 @@
+/*
+ * Teste16 POSITIVO
+ * -- Comentario multilinha
+ * -- Uma unica funcao
+ * -- variavel local declarada
+ * -- atribuicao na variavel local
+ * -- ciclo while com { }
+ * -- funcao io print_int
+ */
+ 
+int main() {
+  primer();
+
+  print_int(1);
+//  print_int();
+
+  print_str("ola");
+
+//  print_str();
+  scan_int();
+}

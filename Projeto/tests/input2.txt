@@ -1,0 +1,8 @@
+/*
+ * Teste2 NEGATIVO (deveria ter funcao declarada)
+ * -- Comentario multilinha
+ * -- Variavel global declarada
+ * Carla Henriques, 2023
+ */
+
+int i;

@@ -1,0 +1,17 @@
+//example13
+int main() {
+    int i;
+    i = 3;
+    print_str("ola");
+
+    return i;
+}
+
+
+/*
+int foo (int a){
+    a =2;
+    a = a % 3;
+    return a;
+}
+*/

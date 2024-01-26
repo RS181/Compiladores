@@ -1,0 +1,11 @@
+/*
+ * Teste8= Negativo ( uso de invalido de print_str)
+ * -- Comentario multilinha
+ * -- Uma unica funcao
+ * -- uso de print_str
+ * Rui Santos, 2023
+ */
+
+int main() {
+    print_str("Ola mundo" ");
+}

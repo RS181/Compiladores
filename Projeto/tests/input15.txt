@@ -1,0 +1,12 @@
+/*
+ * Teste15 = Negativo (while espera uma expressao )
+ * -- Comentario multilinha 
+ * Rui Santos, 2023
+ */
+
+int main() {
+    
+    while (int s = 1;){
+    
+    }
+}

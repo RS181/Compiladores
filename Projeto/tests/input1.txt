@@ -1,0 +1,6 @@
+/*
+ * Teste1 NEGATIVO (deveria ter funcao declarada)
+ * -- Comentario multilinha
+ * -- Nenhuma funcao eh declarada
+ * Carla Henriques, 2023
+ */

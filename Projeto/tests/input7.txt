@@ -1,0 +1,30 @@
+/*
+ * Teste7= POSITIVO
+ * -- Comentario multilinha (com varios testes)
+ * -- mais do que uma funcao
+ * -- variavel local declarada
+ * -- atribuicao de varaivel local
+ * -- invocacao de funcao
+ * Rui Santos, 2023
+ */
+
+/*Second comment*/
+int soma (int p , int s){
+    return p + s;
+}
+
+int main() {
+    /* First comment */
+    int a = 2;
+    /* Second comment */
+    int b = 3;
+
+    /****
+    * Common multi-line comment style.
+    ****/    
+    print_int(soma(a,b));
+    /*
+    * Another common multi-line comment style.
+    */
+    int c = 4;
+}

@@ -1,0 +1,40 @@
+/*
+ * Teste21 POSITIVO
+ * -- Comentario multilinha
+ * -- uma funcao
+ * -- variavel local declarada
+ * -- array declarado
+ * -- atribuicao na variavel local
+ * -- atribuicao de array
+ * -- ciclo for SEM { }, com apenas 1 linha
+ * -- ciclo for com { }
+ * -- funcao io print_int
+ * -- return
+ * -- pos operador
+ * -- break dentro de ciclo for
+ * 
+ */
+
+int main() {
+   int fib[20];
+   int i;
+
+   fib[0] = 0;
+   fib[1] = 1;
+   
+   fib[i] = fib[i-1] + fib[i-2];
+
+   print_int(fib[i]);	
+
+   for(i=2; i<20; i++) 
+      i = 22;
+
+   for(i=0; i<20; i++) {
+      print_int(fib[i]);
+      break;	
+   }	
+
+   i++;
+   return (i<20);
+		
+}

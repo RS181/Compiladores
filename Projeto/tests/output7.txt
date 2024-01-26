@@ -1,0 +1,1 @@
+GDefn [FunDecl TypeInt "soma" [Param TypeInt "p",Param TypeInt "s"] (Block [Return (BinOp (VarAccess (Id "p")) Plus (VarAccess (Id "s")))]),FunDecl TypeInt "main" [] (Block [AssignStmTE TypeInt "a" (IntLiteral 2),AssignStmTE TypeInt "b" (IntLiteral 3),SimpleExp (PrintInt (FunCall "soma" [VarAccess (Id "a"),VarAccess (Id "b")]))])]

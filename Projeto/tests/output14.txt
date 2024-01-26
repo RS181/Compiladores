@@ -1,0 +1,2 @@
+Up to date
+GDefn [FunDecl TypeInt "main" [] (Block [AssignStmTE TypeInt "i" (IntLiteral 1),While (BinOp (VarAccess (Id "i")) LessThanEqual (IntLiteral 10)) (Block [AssignStmT TypeInt [Id "k"],For (AssignStm (Id "k") (IntLiteral 0)) (BinOp (VarAccess (Id "k")) LessThan (IntLiteral 3)) (PosOp (Id "k") PlusPlus) (Block [SimpleExp (PrintInt (VarAccess (Id "i")))]),SimpleExp (PosOp (Id "i") PlusPlus)])])]

@@ -1,0 +1,15 @@
+/*
+ * Teste6 POSITIVO
+ * -- Comentario multilinha
+ * -- Uma unica funcao
+ * -- variavel local declarada
+ * -- atribuicao na variavel local
+ * Carla Henriques, 2023
+ */
+
+int main() {
+    int i;
+    for(i=0; i<20; i++) {
+      print_int(i);	
+   }	
+}

@@ -1,0 +1,1 @@
+GDefn [FunDecl TyInt "main" [] (Block [AssignStmT TyInt ["i"]])]

@@ -1,0 +1,12 @@
+/*
+ * Teste22 NEGATIVO
+ * -- array com {} no lugar de []
+ * 
+ */
+
+int main() {
+   int fib{2};
+   i++;
+   return (i<20);
+		
+}

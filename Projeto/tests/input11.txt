@@ -1,0 +1,9 @@
+/*
+ * Teste11 = Negativo (nao podemos ter uma declaraçao funcao dentro de outra)
+ * -- Comentario multilinha 
+ * Rui Santos, 2023
+ */
+
+int main() {
+    int foo(){}
+}

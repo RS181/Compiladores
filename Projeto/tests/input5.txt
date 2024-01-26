@@ -1,0 +1,8 @@
+/*
+ * Teste5 NEGATIVO
+ * -- funcao nao tem o } para fechar
+ * Carla Henriques, 2023
+ */
+
+int main() {
+    int i;

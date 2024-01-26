@@ -1,0 +1,20 @@
+/*
+ * Teste8= POSITIVO
+ * -- Comentario multilinha
+ * -- Comentario linha
+ * -- Uma unica funcao
+ * -- variavel local declarada
+ * -- uso de if else 
+ * -- uso de print_str
+ * -- main com argumentos 
+ * Rui Santos, 2023
+ */
+
+int main(int a, int b) {
+    //Teste de Comentario em linha
+    bool teste;
+    if (a >= b)
+        print_str("variavel a é maior ou igual a variavel b");
+    else 
+        print_str("varaivel b é maior que variavel a");
+}

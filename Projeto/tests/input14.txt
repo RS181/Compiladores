@@ -1,0 +1,21 @@
+/*
+ * Teste14 =POSITIVO 
+ * -- Comentario multilinha 
+ * -- variaveis locais 
+ * -- uso de while e for 
+ * -- print int 
+ * Rui Santos, 2023
+ */
+
+
+int main() {
+    int i = 1;
+    while (i <= 10) {
+        int k;
+        for (k = 0 ; k < 3 ; k++){
+            print_int(i);
+        }
+        i++;
+    }
+   
+}

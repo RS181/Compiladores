@@ -1,0 +1,1 @@
+GDefn [FunDecl TypeInt "main" [Param TypeInt "a",Param TypeInt "b"] (Block [AssignStmT TypeBool [Id "teste"],IfThenElse (BinOp (VarAccess (Id "a")) GreaterThanEqual (VarAccess (Id "b"))) (SimpleExp (PrintStr "\"variavel a \233 maior ou igual a variavel b\"")) (SimpleExp (PrintStr "\"varaivel b \233 maior que variavel a\""))])]

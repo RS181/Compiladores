@@ -1,0 +1,1 @@
+GDefn [FunDecl TypeInt "main" [] (Block [AssignStmT TypeInt [Id "i"],For (AssignStm (Id "i") (IntLiteral 0)) (BinOp (VarAccess (Id "i")) LessThan (IntLiteral 20)) (PosOp (Id "i") PlusPlus) (Block [SimpleExp (PrintInt (VarAccess (Id "i")))])])]

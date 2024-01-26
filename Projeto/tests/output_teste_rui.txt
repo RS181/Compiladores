@@ -1,0 +1,69 @@
+Build profile: -w ghc-8.8.4 -O1
+In order, the following will be built (use -v for more details):
+ - compiler-0.1.0.0 (exe:compiler) (file src/CodeGen.hs changed)
+Preprocessing executable 'compiler' for compiler-0.1.0.0..
+Building executable 'compiler' for compiler-0.1.0.0..
+[6 of 7] Compiling CodeGen          ( src/CodeGen.hs, /mnt/c/Users/Jessica/Desktop/Compiladores/trabalho-laboratorial-grupo_2/dist-newstyle/build/x86_64-linux/ghc-8.8.4/compiler-0.1.0.0/x/compiler/build/compiler/compiler-tmp/CodeGen.o )
+Linking /mnt/c/Users/Jessica/Desktop/Compiladores/trabalho-laboratorial-grupo_2/dist-newstyle/build/x86_64-linux/ghc-8.8.4/compiler-0.1.0.0/x/compiler/build/compiler/compiler ...
+----------------------------------------
+*** Lexer ****
+
+[INT,ID "main",LPAREN,RPAREN,LBRACE,INT,ID "i",SEMICOLON,ID "i",ASSIGN,NUM 3,SEMICOLON,ID "i",PLUSPLUS,SEMICOLON,RETURN,ID "i",SEMICOLON,RBRACE]
+----------------------------------------
+*** Parser ****
+
+GDefn [FunDecl TypeInt "main" [] (Block2 [("i",TypeInt)] [AssignStm (Id "i") (IntLiteral 3),SimpleExp (PosOp (Id "i") PlusPlus),Return (VarAccess (Id "i"))])]
+----------------------------------------
+*** Intermediate Code ****
+
+LABEL "main"
+MOVEI "t0" 3
+OPI Plus "t1" "t1" 1
+MOVE "t1" "t0"
+RETURN "t1"
+----------------------------------------
+*** MIPS Code ****
+
+.text
+
+_startprogram_: 
+	jal main         #start program
+
+_stopprogram_: 
+	li $v0, 10
+	syscall          #Exit the program
+main: 
+	sw $fp, -4($sp)  #save old $fp
+	sw $ra, -8($sp)  #save return address
+	la $fp , 0($sp)  #setup frame pointer
+	la $sp, -10($sp) #stack space for all 10 temps
+	li $t0 , 3
+	addi $t1 , $t1 , $1
+	move $t1 , $t0
+	move $v0, $t1    #store result
+	jal _return_     #jump and link to return
+
+scan_int: 
+	li $v0, 5
+	syscall
+	jr $ra
+
+print_int: 
+	li $v0, 1
+	lw $a0, 0($sp)
+	syscall
+	jr $ra
+
+print_str: 
+	li $v0, 4
+	lw $a0, 0($sp)
+	syscall
+	jr $ra
+
+_return_: 
+	la $sp, 0($fp)  #restore stack pointer
+	lw $ra, -8($sp) #restore return address
+	lw $fp, -4($sp) #restore frame pointer
+	jr $ra          #return
+
+----------------------------------------

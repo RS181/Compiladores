@@ -1,0 +1,23 @@
+/*
+ * Teste23 POSITIVO
+ * -- for com , ao inves de ;
+ * 
+ */
+
+int main() {
+   int fib[20];
+   int i;
+
+   fib[0] = 0;
+   fib[1] = 1;
+
+   print_int(fib[i]);	
+
+   for(i=2, i<20, i++) 
+      i = 22;
+
+   i++;
+   
+   return (i<20);
+		
+}

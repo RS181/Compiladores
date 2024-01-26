@@ -1,0 +1,19 @@
+/*
+ * Teste10 = Positivo 
+ * -- Comentario multilinha 
+ * -- Comentarios de linha 
+ * -- Uma unica funcao
+ * -- uso de expressoes aritmeticas (com teste de precedencias)
+ * -- atribuicoes 
+ * Rui Santos, 2023
+ */
+
+int main() {
+    int a = 1+2*3; // 1 + (2*3)
+    int b = 1-2/4; //1 - (2/4)
+
+    int c = 4+2%2; //4 + (2%2)
+
+    b = c;
+    c = a;     
+}

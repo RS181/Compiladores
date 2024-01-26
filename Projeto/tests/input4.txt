@@ -1,0 +1,19 @@
+/*
+ * Teste4 POSITIVO
+ * -- Comentario multilinha
+ * -- Uma unica funcao
+ * -- variavel local declarada
+ * -- atribuicao na variavel local
+ * Carla Henriques, 2023
+ */
+
+int main() {
+    while (x > 0)
+    {
+    int i, z;
+    int y, a;
+    bool r1, r2;
+    i = 0;
+    i++;
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * Teste13 =POSITIVO 
+ * -- Comentario multilinha 
+ * -- variaveis locais 
+ * -- tipo string;
+
+ * Rui Santos, 2023
+ */
+
+
+int main() {
+    string s;
+    s = "Ola mundo";
+}

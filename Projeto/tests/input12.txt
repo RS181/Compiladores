@@ -1,0 +1,18 @@
+/*
+ * Teste12 =POSITIVO 
+ * -- Comentario multilinha 
+ * -- variaveis locais 
+ * -- expressoes aritmeticas e condicionais 
+ * -- if e else 
+ * -- return
+ * Rui Santos, 2023
+ */
+
+int main() {
+    int a = 2;
+    int b  = 4;
+    if (b % a == 2)
+        return 1;
+    else 
+        return 0;
+}

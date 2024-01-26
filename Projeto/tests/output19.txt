@@ -1,0 +1,1 @@
+GDefn [FunDecl TypeInt "factorial" [Param TypeInt "n"] (Block [IfThen (BinOp (VarAccess (Id "n")) Equal (IntLiteral 0)) (Return (IntLiteral 1)),Return (BinOp (VarAccess (Id "n")) Mult (FunCall "factorial" [BinOp (VarAccess (Id "n")) Minus (IntLiteral 1)]))]),FunDecl TypeInt "main" [] (Block [SimpleExp (PrintInt (FunCall "factorial" [ScanInt]))])]

@@ -1,0 +1,13 @@
+/*
+ * Teste3 NEGATIVO (variaveis globais nao sao permitidas)
+ * -- Comentario multilinha
+ * -- Declaracao de variavel global
+ * -- Funcao declarada
+ * Carla Henriques, 2023
+ */
+
+int i;
+
+int main () {
+
+}
